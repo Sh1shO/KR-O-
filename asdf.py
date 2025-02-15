@@ -54,7 +54,6 @@ class HarryPotterApp(QMainWindow):
             print("Ошибка загрузки данных")
 
     def update_table(self):
-        """Обновляет таблицу на основе `self.filtered_data`."""
         self.table.setRowCount(len(self.filtered_data))
         for row, char in enumerate(self.filtered_data):
             print(char)
